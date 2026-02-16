@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmberKey Realty – Nieruchomości na Cyprze</title>
+    <!-- Import elegant Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Brand color palette */
+            --primary-color: #003f5c;
+            --secondary-color: #e3b148;
+            --text-color: #333333;
+            --background-color: #f7f9fb;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: var(--background-color);
+        }
+
+        header {
+            background: var(--primary-color);
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin-left: 1.5rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        .section {
+            padding: 3rem 1rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1493550494394-b00bda2e8597?auto=compress&cs=tinysrgb&fit=crop&w=1050&q=80') center/cover no-repeat;
+            position: relative;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-content {
+            position: relative;
+            padding: 5rem 1rem;
+            z-index: 1;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 0.75rem 1.75rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #c69a3f;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            flex: 1 1 calc(50% - 1.5rem);
+            padding: 1.5rem;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .card p {
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 700px) {
+            .card {
+                flex-basis: 100%;
+            }
+            .hero h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AmberKey Realty</h1>
+        <nav>
+            <a href="#about">O nas</a>
+            <a href="#offers">Oferty</a>
+            <a href="#lifestyle">Styl życia</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Żyj tam, gdzie inni przyjeżdżają na wakacje</h2>
+            <p>Pomagamy Polakom spełnić marzenia o własnym domu na słonecznym Cyprze.</p>
+            <a class="btn" href="#contact">Skontaktuj się z nami</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>O nas</h2>
+        <p>
+            AmberKey Realty to butikowe biuro nieruchomości stworzone przez Gabrielę Kuk — licencjonowaną agentkę i właścicielkę biura.
+            Łączymy polskich klientów z najpiękniejszymi domami i apartamentami na Cyprze. Nasze biuro ma siedziby w Krakowie i na południu Cypru (Pafos/Limassol),
+            dlatego znamy zarówno lokalny rynek, jak i potrzeby Polaków poszukujących drugiego domu w basenie Morza Śródziemnego. Współpracujemy z siedmioma zaufanymi deweloperami
+            i pomagamy na każdym etapie: od znalezienia idealnej nieruchomości, przez negocjacje, aż po formalności i obsługę posprzedażową.
+        </p>
+    </section>
+
+    <section id="offers" class="section">
+        <h2>Nasze oferty</h2>
+        <p>
+            Poznaj wybrane nieruchomości, które oddają klimat życia na Cyprze. W AmberKey Realty znajdziesz luksusowe wille z prywatnym basenem, apartamenty z widokiem na morze oraz inwestycje w najlepszych lokalizacjach wyspy.
+            Zapoznaj się z przykładowymi ofertami poniżej lub skontaktuj się z nami, aby otrzymać indywidualną propozycję.
+        </p>
+        <div class="cards">
+            <div class="card">
+                <h3>Dom z basenem</h3>
+                <p>Wyobraź sobie poranek z kawą na tarasie, błękitną wodę tuż obok i ponad 300 słonecznych dni w roku. W naszych ofertach znajdziesz domy z prywatnym basenem, dzięki którym możesz korzystać z kąpieli od wczesnej wiosny aż do późnej jesieni.</p>
+                <!-- Embed basen post -->
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DTZ1nt0jEqw/" data-instgrm-version="12" style="width:100%; margin-top:1rem;"></blockquote>
+            </div>
+            <div class="card">
+                <h3>Luksusowa willa</h3>
+                <p>Przestronne wnętrza, panoramiczne przeszklenia i niezapomniane widoki na Morze Śródziemne. Pracujemy tylko z zaufanymi deweloperami, by zapewnić najwyższą jakość nieruchomości i spokojny proces zakupu.</p>
+                <!-- Embed luxury villa post -->
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DTRE5SRDMLh/" data-instgrm-version="12" style="width:100%; margin-top:1rem;"></blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section id="lifestyle" class="section">
+        <h2>Styl życia na Cyprze</h2>
+        <p>
+            Cypr to nie tylko piękne nieruchomości, ale również styl życia: romantyczne zachody słońca, malownicze klify, znakomita kuchnia i ponad 300 dni słońca w roku. Zobacz, jak wygląda codzienność na wyspie, przeglądając wybrane wpisy z naszego Instagrama.
+        </p>
+        <div class="cards">
+            <div class="card">
+                <h3>Klify Pissouri</h3>
+                <p>Nasza wycieczka na słynne wapienne klify Pissouri pokazała nam, że Cypr jest pełen miejsc zapierających dech w piersiach. Zobacz, dlaczego warto dodać ten punkt do swojej listy marzeń.</p>
+                <!-- Embed Pissouri cliffs post -->
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DTIkv0AjE-6/" data-instgrm-version="12" style="width:100%; margin-top:1rem;"></blockquote>
+            </div>
+            <div class="card">
+                <h3>Życie w luksusowej willi</h3>
+                <p>Styl życia w luksusowej willi na Cyprze to przestrzeń, basen i panoramiczne widoki — idealne miejsce na pracę i wypoczynek przez cały rok.</p>
+                <!-- Embed lifestyle villa post (reuse luxury villa) -->
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DTRE5SRDMLh/" data-instgrm-version="12" style="width:100%; margin-top:1rem;"></blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Kontakt</h2>
+        <p>
+            Masz pytania lub chcesz dowiedzieć się więcej o nieruchomościach na Cyprze? Skontaktuj się z nami — chętnie odpowiemy na wszystkie Twoje wątpliwości i przygotujemy indywidualną ofertę dopasowaną do Twoich potrzeb.
+        </p>
+        <p>
+            <strong>Telefon:</strong> <a href="tel:+48576077577">+48 576 077 577</a><br>
+            <strong>E‑mail:</strong> <a href="mailto:gabriela@amberkey.eu">gabriela@amberkey.eu</a><br>
+            <strong>Instagram:</strong> <a href="https://www.instagram.com/gabrielakuk_/" target="_blank">@gabrielakuk_</a>
+        </p>
+        <p>
+            Jeśli wolisz bezpośrednią rozmowę, zapraszamy do naszego biura w Krakowie lub na południu Cypru — umów się na spotkanie, a my z przyjemnością pokażemy Ci dostępne nieruchomości.
+        </p>
+    </section>
+
+    <!-- Instagram embed script -->
+    <script async src="https://www.instagram.com/embed.js"></script>
+</body>
+</html>
